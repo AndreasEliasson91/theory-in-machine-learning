@@ -1,5 +1,5 @@
-from data.test_data_generators import scalar_product_test_1_1, scalar_product_test_1_2, scalar_product_test_2_1,\
-    scalar_product_test_2_2, scalar_product_test_3_1, scalar_product_test_3_2
+from assignment01.data.test_data_generators import scalar_product_test_1_1, scalar_product_test_1_2, \
+    scalar_product_test_2_1, scalar_product_test_2_2, scalar_product_test_3_1, scalar_product_test_3_2
 from math import sqrt, cos, pi
 
 u = [0, 2, 3]

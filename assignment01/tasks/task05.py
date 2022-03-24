@@ -1,5 +1,5 @@
 from assignment01 import print_matrices
-from data.test_data_generators import matrices_add_test_1_1, matrices_add_test_1_2, matrices_add_test_2_1,\
+from assignment01.data.test_data_generators import matrices_add_test_1_1, matrices_add_test_1_2, matrices_add_test_2_1,\
     matrices_add_test_2_2, matrices_add_test_3_1, matrices_add_test_3_2
 
 A = [[1, 2], [3, 2]]

@@ -1,4 +1,4 @@
-from data.test_data_generators import distance_test_1, distance_test_2, distance_test_3
+from assignment01.data.test_data_generators import distance_test_1, distance_test_2, distance_test_3
 
 P = [0, 0]
 Q = [2, 3]

@@ -1,4 +1,4 @@
-from data.test_data_generators import vector_add_test_1, vector_add_test_2, vector_add_test_3
+from assignment01.data.test_data_generators import vector_add_test_1, vector_add_test_2, vector_add_test_3
 
 u = [1, 2, 3]
 v = [2, 2, 2]
