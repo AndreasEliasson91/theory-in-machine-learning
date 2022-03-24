@@ -1,8 +1,6 @@
 import pandas as pd
-import seaborn as sns
 import time as t
 
-from matplotlib import pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.datasets import load_iris
 from sklearn.decomposition import PCA

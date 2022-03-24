@@ -1,4 +1,9 @@
-from assignment02 import *
+import seaborn as sns
+
+from assignment02 import elbow_method, get_iris_dataset, load_iris
+from matplotlib import pyplot as plt
+from sklearn.cluster import KMeans
+
 
 df = get_iris_dataset()
 
@@ -53,7 +58,12 @@ def test_attributes() -> None:
 
 
 def main():
-    print(df.shape)
+    # Seaborn distribution chart of the data set
+    df['flower'] = load_iris().target
+    sns.displot(df, x='sepal length (cm)', hue='flower')
+    sns.displot(df, x='sepal width (cm)', hue='flower')
+    sns.displot(df, x='petal length (cm)', hue='flower')
+    sns.displot(df, x='petal width (cm)', hue='flower')
 
     # Elbow Method to get the k value for the algorithm
     plt.figure()
@@ -67,14 +77,10 @@ def main():
     plt.plot(*elbow_method(df[['sepal length (cm)', 'sepal width (cm)']]))
     plt.show()
 
+    # Print data points and attributes for the data set and run the plot functions
+    print(df.shape)
     test_attributes()
     plot_clusters()
-
-    df['flower'] = load_iris().target
-    sns.displot(df, x='sepal length (cm)', hue='flower')
-    sns.displot(df, x='sepal width (cm)', hue='flower')
-    sns.displot(df, x='petal length (cm)', hue='flower')
-    sns.displot(df, x='petal width (cm)', hue='flower')
 
 
 if __name__ == '__main__':
