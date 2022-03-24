@@ -68,7 +68,7 @@ def main():
     print(f'Length P -> Q: {get_length_of_distances(P, Q) : .5f}\n'
           f'Length Q -> R: {get_length_of_distances(Q, R) : .5f}')
 
-    # Plot PQ and QR (Task 01 for passing grade)
+    # Plot PQ and QR (Task 02 for passing grade)
     plot_distances(P, Q, R)
 
     # Print and then plots random number of points to further testing
