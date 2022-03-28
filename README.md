@@ -1,4 +1,6 @@
 # Theory in Machine Learning
+
+## Overview
 This repository contains my code to complete the course _Theory in Machine Learning_ at __Teknikhögskolan__.<br>
 During the course we exercised two assignments in _Linear Algebra_ and _Data Analysis_, where __Python__ and a number of libraries where used.
 
